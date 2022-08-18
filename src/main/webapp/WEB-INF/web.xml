@@ -4,45 +4,16 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-
   <display-name>News Management</display-name>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
-  
+    <welcome-file>index.jsp</welcome-file>  
+  </welcome-file-list>  
     <servlet>
 		<servlet-name>Controller</servlet-name>
 		<servlet-class>by.itacademy.matveenko.jd2.controller.FrontController</servlet-class>
-	</servlet>
-	
+	</servlet>	
 	<servlet-mapping>
 		<servlet-name>Controller</servlet-name>
 		<url-pattern>/controller</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-        <servlet-name>Logout</servlet-name>
-        <servlet-class>by.itacademy.matveenko.jd2.controller.Logout</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>Logout</servlet-name>
-        <url-pattern>/logout</url-pattern>
-    </servlet-mapping>
-    
-    <filter>
-        <filter-name>AuthorizationFilter</filter-name>
-        <filter-class>by.itacademy.matveenko.jd2.controller.impl.AuthorizationFilter</filter-class>
-    </filter>
-
-    <filter-mapping>
-        <filter-name>AuthorizationFilter</filter-name>
-        <url-pattern>/</url-pattern>
-    </filter-mapping>
-   
+	</servlet-mapping>      
 </web-app>
